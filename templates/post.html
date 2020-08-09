@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+	<title>Posts</title>
+{% endblock %}
+
+{% block body %}
+<section>
+	<div class="container">
+		<div class="posts">
+			<div class="post-block">
+				<p class="post-title">{{ post.title }}</a>
+				<p class="post-body">{{ post.body }}</p>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

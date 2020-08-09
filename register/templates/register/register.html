@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+	<title>Posts</title>
+{% endblock %}
+
+{% block body %}
+<section>
+	<div class="container">
+		<div class="register-form">
+			<form action="{{ url_for('register.reg_bl') }}", method="POST">
+				{{ register_form.hidden_tag() }}
+				<p>{{ register_form.email.label() }} {{ register_form.email() }}</p>
+				<p>{{ register_form.password.label() }} {{ register_form.password() }}</p>
+				<p>{{ register_form.remember.label() }} {{ register_form.remember() }}</p>
+				<p>{{ register_form.submit() }}</p>
+			</form>
+		</div>
+	</div>
+</section>
+{% endblock %}

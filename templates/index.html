@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	<title>Main</title>
+{% endblock %}
+
+{% block body %}
+<section>
+	<div class="container">
+		<div class="menu-blocks">
+			<a href="{{ url_for('posts') }}" class="block block-p"><img src="../static/svg/list.svg" alt="Posts" class="menu-icons">Posts</a>
+			<a href="/my-posts" class="block block-mp"><img src="../static/svg/to-do-list.svg" alt="Posts"   class="menu-icons">My Posts</a>
+			<a href="/<acc>" class="block block-hp"><img src="../static/svg/user.svg" alt="Posts"  class="menu-icons">Home Page</a>
+			<a href="/<acc>/setting" class="block block-s"><img src="../static/svg/settings.svg" alt="Posts" class="menu-icons">Setting</a>
+		</div>
+	</div>
+</section>
+{% endblock %}
